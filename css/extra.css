@@ -1,0 +1,105 @@
+.logo{
+	margin-right: 50px;
+	margin-bottom: 0px;
+}
+
+.logo>img{
+	max-height: 40px;
+	max-width: 40px; 
+}
+
+.sep-menu-btn{
+	margin-bottom: 0px;
+}
+
+.menu-size>li>a{
+	font-size: 1.2em;
+	-webkit-transition: font-size .5s ease;
+  	-moz-transition: font-size .5s ease;
+  	-o-transition: font-size .5s ease;
+  	transition: font-size .5s ease;
+}
+
+.menu-size>li>a:hover{
+	font-size: 1.1em;
+	text-decoration:overline 2px #0d6efd;
+
+}
+
+/* Parallax */
+.section-background {
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-size: cover;
+  	color: #ffffff;
+  	min-height: 400px;
+}
+
+.opacity-black{
+	background: rgba(0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+	display: flex;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+.parallax-img1 {
+  	background-image: url("../img/parallax1.jpg");
+}
+
+.parallax-img2 {
+  	background-image: url("../img/parallax2.jpg");
+}
+
+.parallax-img3 {
+  	background-image: url("../img/parallax3.webp");
+}
+
+.parallax-img4 {
+  	background-image: url("../img/parallax4.jpg");
+}
+
+.parallax-img5 {
+  	background-image: url("../img/parallax5.jpg");
+}
+
+
+
+
+
+/* Responsive Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	.logo{
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.logo>img{
+		max-height: 75px;
+		max-width: 75px; 
+	}
+
+	.sep-menu-btn{
+		margin-bottom: 10px !important;
+	}
+  
+}
+
+
+/* Responsive Movil */
+@media (min-width: 100px) and (max-width: 767px) {
+	.logo{
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.logo>img{
+		max-height: 90px;
+		max-width: 90px; 
+	}
+
+	.sep-menu-btn{
+	margin-bottom: 15px !important;
+	}
+  
+}

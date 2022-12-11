@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="./img/favicon-euphoria-enterprises.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web de Euphoria Enterprises">
+  <meta name="author" content="Christian Borga">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/extra.css" rel="stylesheet">
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/functions.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Index",
+    "item": "www.euphoprises.com/index.html"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Servicios",
+    "item": "https://www.euphoprises.com/servicios.html"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Productos",
+    "item": "https://www.euphoprises.com/productos.html"  
+  }]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Euphoria Enterprises",
+  "alternateName": "Euphoprises",
+  "url": "https://www.euphoprises.com",
+  "logo": ""
+}
+</script>
+  
+  <title>Euphoria Enterprises - Home</title>  
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="p-3 bg-dark text-black">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <!-- logo -->
+        <a href="./index.html" class="d-flex align-items-center justify-content-center logo">
+          <img src="./img/logo-euphoria-enterprises.png" alt="Logotipo Euphoria Enterprises">
+        </a>
+
+        <!-- menu -->
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 sep-menu-btn menu-size">
+          <li><a href="./index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+          <li><a href="./servicios.html" class="nav-link px-2 text-white">Servicios</a></li>
+          <li><a href="./productos.html" class="nav-link px-2 text-white">Productos</a></li>
+        </ul>
+
+        <!-- buttons -->
+        <div class="text-end d-flex justify-content-center sep-menu-btn">
+          <button  type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login manual</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="login()">Login NeuroChain</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Header del PopUp -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Content del PopUp -->
+          <div class="modal-body">
+            <form>
+              <!-- Email  -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="formEmail">Dirección de correo</label>
+                <input type="email" id="formEmail" class="form-control" />
+              </div>
+              <!-- Introducir Contraseña -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="formPassword">Contraseña</label>
+                <input type="password" id="formPassword" class="form-control" />
+              </div>
+              <!-- Estilo -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31">Recuérdame</label>
+                  </div>
+                </div>
+                <!-- Link simple -->
+                <div class="col">
+                  <a href="./restablecer.html">¿Olvidó su contraseña?</a>
+                </div>
+              </div>
+              <!-- Botón de registro -->
+              <div class="text-center">
+                <p>¿No es cliente? <a href="./registro.html">Regístrese</a></p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Footer del PopUp -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal que carga el PopUp -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div id="popup" class="modal" style="display:none;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <section class="text-center section-background parallax-img1">
+      <div class="py-lg-5 opacity-black">
+        <div class="col-lg-6 col-md-8 mx-auto container">
+          <h1 class="fw-light">Euphoria Enterprises</h1>
+          <p class="lead fw-light">¡Bienvenido a nuestra web! Somos un proveedor líder en servicios y productos basados en tecnología punta. Nuestra misión es traerle el futuro, hoy.
+
+Ya sea que esté buscando soluciones innovadoras para mejorar su negocio, o nuevos dispositivos punteros para hacer su vida personal más excitante, siempre tenemos algo para todos. Nuestro gran equipo de expertos está constantemente investigando y desarrollando nuevos productos para ayudarle a mantenerse en la última.
+
+Explore nuestro sitio web para aprender más sobre lo que podemos ofrecerle, y asegúrese de volver a menudo para enterarse de las últimas novedades. Gracias por escogernos como compañeros en su viaje hacia el futuro.
+
+Euphoria: Bring Happiness.</p>
+          <p>
+            <a href="./registro.html" class="btn btn-primary my-2">Regístrese y descubra el futuro, hoy</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+      <h2 class="text-center">Últimas Noticias</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia1.jpg" alt="Asalto Faraday">
+              <div class="card-body">
+                <p class="card-text">Grupo de fanáticos asalta la Sede Faraday y deja a varios empleados heridos</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace 9 min</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia2.jpg" alt="Ciber Soldado">
+              <div class="card-body">
+                <p class="card-text">Se revela el nuevo prototipo de Ciber-Soldado: todos los detalles</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace 12 horas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia3.jpg" alt="Conflicto NA">
+              <div class="card-body">
+                <p class="card-text">Conflicto en Estados Unidos: no se prevee una solución pacífica</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace 1 día</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia4.jpg" alt="NeuroChip v5.0">
+              <div class="card-body">
+                <p class="card-text">NeuroChip v5.0 de EE: a la venta a principios de año</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace más de 1 día</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia5.jpg" alt="Neuro Implante">
+              <div class="card-body">
+                <p class="card-text">Usuarios de Neuro Implantes: ¿humano o máquina?</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace 2 días</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/noticia6.jpg" alt="Moto NeonTracer">
+              <div class="card-body">
+                <p class="card-text">Nuestro nuevo modelo NeonTracer ya está en las calles</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver noticia</button>
+                  <small class="text-muted">Hace 3 días</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- FOOTER -->
+  <footer class="border-top container">
+    <div class="row text-center">
+      <div class="col-12 col-12-md">
+        <small class="d-block mb-3 text-muted"><p>&copy; Euphoria Enterprises 2017-2022</p></small>
+      </div>
+      <div class="col-12 col-md">
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./equipo.html">Equipo Directivo</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./sedes.html">Sedes</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./privacidad.html">Privacidad</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./terminos.html">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="tel:+34676234867">Teléfono: 
+            <br><span class="link-primary">+34 676234867</span></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="mailto:euphoprises@euphoria.neuro">NeuroMail: 
+            <br><span class="link-primary">euphoprises@euphoria.neuro</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="./img/favicon-euphoria-enterprises.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio web de Euphoria Enterprises">
+  <meta name="author" content="Christian Borga">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/extra.css" rel="stylesheet">
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/functions.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "NeuroChip",
+  "image": "",
+  "description": "Chip Neural conectado a NeuroChain. Permite comunicarse entre usuarios, acceso a la NeuroNet, etc.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Euphoria"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "",
+    "priceCurrency": "EUR",
+    "price": "199.95",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Euphoria NeonTracer Motorcycle",
+  "image": "",
+  "description": "Motocicleta puntera. Emplea energía eléctrica. No contamina. Alcanza velocidades de 300 km/h.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Euphoria"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "",
+    "priceCurrency": "EUR",
+    "price": "4499",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Gauss Combat Rifle Mk.4",
+  "image": "",
+  "description": "Arma de energía, desarrollada por Euphoria Enterprises con colaboración de Blue Corp. Pensada ser empleada por Ciber Soldados o milicias.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Euphoria"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "",
+    "priceCurrency": "EUR",
+    "price": "1200",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Flare Saber "Laevateinn"",
+  "image": "",
+  "description": "Arma de filo. Emite una gran cantidad de calor, llegando a prenderse en llamas. Puede cortar casi cualquier material.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Euphoria"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "",
+    "priceCurrency": "EUR",
+    "price": "1000",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+</script>
+  <title>Euphoria Enterprises - Productos</title>  
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="p-3 bg-dark text-black">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <!-- logo -->
+        <a href="./index.html" class="d-flex align-items-center justify-content-center logo">
+          <img src="./img/logo-euphoria-enterprises.png" alt="Logotipo Euphoria Enterprises">
+        </a>
+
+        <!-- menu -->
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 sep-menu-btn menu-size">
+          <li><a href="./index.html" class="nav-link px-2 text-white">Inicio</a></li>
+          <li><a href="./servicios.html" class="nav-link px-2 text-white">Servicios</a></li>
+          <li><a href="./productos.html" class="nav-link px-2 text-secondary">Productos</a></li>
+        </ul>
+
+        <!-- buttons -->
+        <div class="text-end d-flex justify-content-center sep-menu-btn">
+          <button  type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login manual</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="login()">Login NeuroChain</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Header del PopUp -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Content del PopUp -->
+          <div class="modal-body">
+            <form>
+              <!-- Email  -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="formEmail">Dirección de correo</label>
+                <input type="email" id="formEmail" class="form-control" />
+              </div>
+              <!-- Introducir Contraseña -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="formPassword">Contraseña</label>
+                <input type="password" id="formPassword" class="form-control" />
+              </div>
+              <!-- Estilo -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31">Recuérdame</label>
+                  </div>
+                </div>
+                <!-- Link simple -->
+                <div class="col">
+                  <a href="./restablecer.html">¿Olvidó su contraseña?</a>
+                </div>
+              </div>
+              <!-- Botón de registro -->
+              <div class="text-center">
+                <p>¿No es cliente? <a href="./registro.html">Regístrese</a></p>
+              </div>
+            </form>
+          </div>
+
+          <!-- Footer del PopUp -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+            <button type="button" class="btn btn-primary">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal que carga el PopUp -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div id="popup" class="modal" style="display:none;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <section class="text-center section-background parallax-img4">
+      <div class="py-lg-5 opacity-black">
+        <div class="col-lg-6 col-md-8 mx-auto container">
+          <h1 class="fw-light">Productos</h1>
+          <p class="lead fw-light">Bienvenido a la sección de productos. Aquí, tiene al alcance de sus manos el acceso a la más alta tecnología, presente, y futura. Nuestro equipo de desarrollo se esfuerza al máximo para traerle a usted y los suyos productos de la mayor calidad imaginable.
+
+          Todo producto Euphoria adquirido en esta web será enviado a su domicilio en menos de 24h. Dicho envío es gratuito. En el caso de no recibir su producto o recibirlo en mal estado, le devolveremos su dinero.
+          No deje pasar la oportunidad de adquirir e instalar un NeuroChip de Euphoria, y desbloquee el acceso a la red, entre otras muchas funciones. Si los productos disponibles aquí no se adecúan a lo que está buscando, siempre puede consultar nuestra sección <a href="./servicios.html" class="nav-link px-2 text-secondary">Servicios</a> y subscribirse a uno de nuestros múltiples planes. </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+      <h2 class="text-center">Novedades</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/producto1.jpg" alt="NeuroChip">
+              <div class="card-body">
+                <p class="card-text"><b>Neurochip v4.9.9</b>
+                  <br>
+                Chip neural, desarrollado por Euphoria. Fácil instalación. 100TB de almacenamiento. Acceso a EuphoNet. </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar ahora</button>
+                  <small><b>200€</b></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/producto2.jpg" alt="NeonTracer">
+              <div class="card-body">
+                <p class="card-text"><b>Motocicleta Euphoria NeonTracer</b>
+                  <br>
+                Último modelo de motocicleta de carretera, movida por energía eléctrica. 300 km/h, muy bajo consumo. Altamente customizable.</p>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar ahora</button>
+                  <small><b>4499€</b></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/producto3.jpg" alt="Rifle de Combate Gauss">
+              <div class="card-body">
+                <p class="card-text"><b>Rifle de Combate Gauss Mk.4</b>
+                  <br>
+                Último modelo de nuestro popular rifle de combate, desarrollado en conjunto con Blue Corp. Su alta precisión, eficiencia energética y su relación calidad/precio lo ha convertido en el modelo más popular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar ahora</button>
+                  <small><b>1200€</b></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./img/producto4.jpg" alt="Flare Saber Laevateinn">
+              <div class="card-body">
+                <p class="card-text"><b>Sable Ígneo Modelo "Laevateinn"</b>
+                  <br>
+                Última revisión de nuestro modelo de Sable Ígneo más puntero. Su filo tiene una durabilidad y afilado inigualables en el mercado, y su hoja térmica puede fundir cualquier material.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Comprar ahora</button>
+                  <small><b>1000€</b></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-top container">
+    <div class="row text-center">
+      <div class="col-12 col-12-md">
+        <small class="d-block mb-3 text-muted"><p>&copy; Euphoria Enterprises 2017-2022</p></small>
+      </div>
+      <div class="col-12 col-md">
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./equipo.html">Equipo Directivo</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./sedes.html">Sedes</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./privacidad.html">Privacidad</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="./terminos.html">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="tel:+34676234867">Teléfono: 
+            <br><span class="link-primary">+34 676234867</span></a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="mailto:euphoprises@euphoria.neuro">NeuroMail: 
+            <br><span class="link-primary">euphoprises@euphoria.neuro</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
