@@ -1,0 +1,7 @@
+# robots.txt file
+User-agent: *
+Disallow: /terminos.html
+Disallow: /privacidad.html
+Disallow: /css
+Disallow: /js
+Sitemap: https://quantumchribog.github.io/
